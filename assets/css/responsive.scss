@@ -1,0 +1,134 @@
+@media(max-width: 968px){
+    header.header .header-inner .header-logo{
+        text-align: center;
+    }
+    h2, h3, h4{
+
+        br{
+            display: none;
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    .index-hero .hero-inner{
+        padding: 10vh 0;
+    }
+}
+@media(min-width: 576px) and (max-width: 968px){
+    h2:not(.semi){
+        font-size: 35px;
+    }
+    .offer .offer-inner{
+        padding: 3em;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .wrapper{
+        padding: 0 30px;
+    }
+    .row.row-third{
+
+        .item{
+            width: calc((100% / 2) - (var(--row-gap) * 2));
+        }
+    }
+    .index-hero .hero-inner{
+
+        .row{
+            flex-direction: column;
+            margin: calc((var(--row-gap) * -1)) 0;
+
+            .item:first-of-type{
+                width: 100%;
+            }
+        }
+    }
+    .about{
+
+        .row.row-half{
+            display: block;
+            margin: calc((var(--row-gap) * -1)) 0;
+
+            .item{
+                width: 100%;
+            }
+        }
+        h2{
+            margin-bottom: 1em;
+        }
+    }
+    .offer .offer-inner{
+
+        .row-half{
+            display: block;
+            margin: calc((var(--row-gap) * -1)) 0;
+
+            .item{
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
+@media(max-width: 575px){
+    h1{
+        font-size: 30px;
+    }
+    h2:not(.semi){
+        font-size: 23px;
+    }
+    h2.semi, h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    h2, h3, h4{
+        margin-bottom: 1.875rem;
+    }
+    .wrapper{
+        padding: 0 20px;
+    }
+    .row{
+
+        &.row-half, &.row-third{
+            flex-direction: column;
+            margin: calc(var(--row-gap) * -1) 0;
+
+            .item{
+                width: 100%;
+                margin: var(--row-gap) 0;
+            }
+        }
+    }
+    header.header{
+        padding: 30px 20px;
+    }
+    .footer{
+        padding: 60px 20px;
+    }
+    .logo{
+        width: 50%;
+    }
+    section.section:not(:first-of-type) {
+        padding: 70px 0;
+    }
+    .index-hero .hero-inner{
+
+        .row-half .item:not(:first-of-type){
+            width: 60%;
+        }
+    }
+    .index-hero::before{
+        width: 50vh;
+        height: 50vh;
+    }
+    .offer .offer-inner{
+        padding: 1.875rem;
+    }
+    .offer .row-half .item:nth-of-type(even){
+        text-align: left;
+    }
+}
